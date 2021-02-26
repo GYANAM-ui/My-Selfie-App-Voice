@@ -1,0 +1,54 @@
+<html>
+    <head>
+       <title>My Selfie App</title>
+<link rel="icon" href="https://cdn4.iconfinder.com/data/icons/common-app-technology-symbols-blue-grey/1083/camera_camcorder_webcam_video_app_technology-512.png" type="image/gif" sizes="16x16">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital@1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Truculenta:wght@200&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link href="style.css" rel="stylesheet">
+
+</head>
+ 
+<body>
+    <div class="container">
+    <center>
+        <h1 style="font-family: 'Miltonian Tattoo', cursive;color:#ffffff;">Voice Selfie App 
+            <img id="logo_img" src="selfie.jpeg">
+        </h1>
+        <a href="" id="link" download="myselfie.jpeg"></a>
+        <hr>
+        <h4 style="color:red;">Please press allow as soon as popup comes. After you give a voice command</h4>
+        
+        <div class="form-group">
+            <h3 style="font-family: 'Truculenta', sans-serif;color:#ffffff">Say "take my selfie"</h3>
+            <label style="font-family: Audiowide, sans-serif;color: greenyellow;">Your Voice Output : </label>
+            <textarea class="form-control" id="textbox" readonly="true"></textarea>
+        </div>
+
+        <button class="btn" onclick="start()">Start</button>
+        <p style="font-family: monospace;color: honeydew;">Press the Start button</p>
+
+        <label style="font-family: Audiowide, sans-serif;color: greenyellow;">Your webcam : </label>
+        <div id="camera"></div>
+
+        <br>
+
+        <label style="font-family: 'Red Hat Display', sans-serif;color: lightgreen;">Your selife Will Display Here: </label>
+        <div id="result"></div>
+
+    </center>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
