@@ -3,34 +3,32 @@ body
     background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(74,109,203,1) 64%, rgba(0,212,255,1) 100%);
 }
-  .btn {background-image: linear-gradient(to right, #348F50 0%, #56B4D3  51%, #348F50  100%)}
-    .btn {
-       margin: 10px;
-       padding: 15px 45px;
-       text-align: center;
-       text-transform: uppercase;
-       transition: 0.5s;
-       background-size: 200% auto;
-       color: white;            
-       box-shadow: 0 0 20px #eee;
-       border-radius: 10px;
-       display: block;
-     }
-
-     .btn:hover {
-       background-position: right center;
-       color: #fff;
-       text-decoration: none;
-     }
 #start-btn
 {
     width: 40%;
 } 
 #camera
 {
-    width:360px;
-    height: 250px;
-    border:1px solid grey;
+    width:500px;
+    height: 350px;
+    border: 1px solid grey;
+    border-image: repeating-linear-gradient(30deg, #4d9f0c, #9198e5, #4d9f0c 20px) 60;
+}
+#result
+{
+    text-align: center;
+    width: 500px;
+    height: 350px;
+    border: 20px solid;
+    border-image: url("https://png.pngtree.com/thumb_back/fw800/background/20190221/ourmid/pngtree-laser-gradient-atmosphere-personality-fashion-image_41640.jpg");
+    border-image-slice: 230 100 110;
+}
+#radius
+{
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 16px black;
 }
 #logo_img
 {
@@ -45,3 +43,22 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(74,109,203,1) 64%, rg
 {
     width: 300px;
 }
+.btn {background-image: linear-gradient(to right, #348F50 0%, #56B4D3  51%, #348F50  100%)}
+.btn {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+ }
